@@ -1,0 +1,249 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: LeagueGothic;
+    src: url(font/league_gothic-webfont.woff);
+}
+body
+{
+    background-image: url(./BG.png);
+    height: 450px; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo
+{
+    color: #fff;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.9rem;
+    margin: 2rem 3rem;
+}
+
+.logo:hover
+{
+    font-size: 2.5rem;
+    transition: all 0.3ms ease;
+}
+.head
+{
+    margin-top: 10px;
+    margin-left: 2.8rem;
+}
+
+.head h1
+{
+    font-family: 'LeagueGothic';
+    color: #fff;
+    font-size: 70px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.head #hori
+{
+    width: 26%;
+    height: 2px;
+    opacity: 10%;
+    background-color : #3d3c3c;
+    margin-left: -20rem;
+}
+
+.head #vert
+{
+    opacity: 10%;
+    background-color : #3d3c3c;
+    transform: rotate(90deg);
+    margin-left: -58rem;
+
+}
+
+.next
+{
+    display: flex;
+    margin-left: 2.8rem;
+    align-items: center;
+    margin-top: -5rem;
+}
+
+
+.next #arrow
+{
+    width: 70px;
+    height: 40px;
+}
+.next a
+{
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    margin-left: 0.5rem;
+    margin-right: -9rem;
+    margin-top: 4px;
+}
+
+.arrownext
+{
+    text-align: center;
+    margin-top: -2rem;
+}
+
+
+.arrownext h2
+{
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 25px;
+    margin-bottom: 3px;
+}
+
+.social
+{
+    display: flex;
+    margin-left: 80rem;
+    margin-top: -2rem;
+}
+
+.social a img
+{
+    width: 40px;
+    padding: 0 5px;
+}
+
+.grid
+{
+    display: grid;
+    width: 58%;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 20px;
+    margin-left: 25rem;
+    margin-top: -4.5rem;
+}
+.grid img
+{
+    width: 260px;
+}
+
+
+
+@media (max-width : 600px)
+{
+    body
+    {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .logo
+{
+    font-size: 2.5rem;
+    margin: 2rem 2rem;
+}
+
+.logo:hover
+{
+    font-size: 2.2rem;
+    transition: all 0.3ms ease;
+}
+.head
+{
+    margin-top: 50px;
+    margin-left: 2rem;
+}
+
+.head h1
+{
+    font-size: 65px;
+}
+.grid
+{
+    width: 38%;
+    grid-template-columns: auto auto;
+    grid-row-gap: 20px;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+.grid img
+{
+    width: 150px;
+    padding-right:0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.next 
+{
+opacity: 0%;
+}
+.arrownext
+{
+    opacity: 0%;
+}
+}
+
+@media (max-width : 990px)
+{
+    body
+    {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .logo
+{
+    font-size: 2.5rem;
+    margin: 2rem 2rem;
+}
+
+.logo:hover
+{
+    font-size: 2.2rem;
+    transition: all 0.3ms ease;
+}
+.head
+{
+    margin-top: 50px;
+    margin-left: 2rem;
+}
+
+.head h1
+{
+    font-size: 65px;
+}
+.grid
+{
+    width: 38%;
+    grid-template-columns: auto auto;
+    grid-row-gap: 20px;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+.grid img
+{
+    width: 150px;
+    padding-right:0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.next 
+{
+opacity: 0%;
+}
+.arrownext
+{
+    opacity: 0%;
+}
+}

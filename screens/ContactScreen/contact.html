@@ -1,0 +1,151 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./contact.css" />
+    <link rel="icon" href="../../assets/logos/LOGO_NO_ BG.png" />
+    <link rel="stylesheet" href="../../sidebar/navbar.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="logo">
+          <img src="../../assets/logos/LOGO_NO_ BG.png" alt="" />
+          eXabyte 2022
+        </div>
+
+        <!--main content-->
+        <div class="form__container">
+          <form action="https://formsubmit.co/exabyte@sxccal.edu" method="POST">
+            <input
+              type="hidden"
+              name="_subject"
+              value="From eXabyte Contact form"
+            />
+            <input
+              type="hidden"
+              name="_next"
+              value="http://exabyte.sxccal.edu/screens/ContactScreen/response.html"
+            />
+            <label for="name">Name</label><br />
+            <input
+              class="popUp"
+              type="text"
+              id="name"
+              name="name"
+              required
+            /><br />
+            <label for="email">Email</label><br />
+            <input
+              class="popUp"
+              type="email"
+              name="email"
+              required
+              id="email"
+            /><br />
+            <!--label for="phone">Phone</label><br />
+          <input class="popUp" type="number" id="phone" /><br /-->
+            <label for="comment">Message</label><br />
+            <textarea
+              class="popUp"
+              type="text"
+              name="message"
+              required
+              id="comment"
+            ></textarea
+            ><br />
+            <br />
+            <button class="popUp" type="submit">Submit Your Request</button>
+          </form>
+          <div class="helper__container">
+            <div class="row">
+              <img src="https://img.icons8.com/ios/30/ffffff/apple-phone.png" />
+              <div>
+                <p><strong>PHONE</strong></p>
+                <p>+91-94333 34837</p>
+              </div>
+            </div>
+            <div class="row">
+              <img src="https://img.icons8.com/ios/30/ffffff/apple-mail.png" />
+              <div>
+                <p><strong>EMAIL</strong></p>
+                <p>exabyte@sxccal.edu</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--right navbar-->
+      <div class="sidebar" id="mySidebar">
+        <div class="nav__btns">
+          <img
+            id="open"
+            onclick="openNav()"
+            src="https://img.icons8.com/ios-glyphs/30/ffffff/menu--v1.png"
+          />
+          <img
+            onclick="closeNav()"
+            src="https://img.icons8.com/ios-glyphs/30/ffffff/delete-sign.png"
+          />
+        </div>
+        <div class="options__container">
+          <ul>
+            <li>
+              <a href="../LandingScreen/index.html">Home</a
+              ><a href="../LandingScreen/index.html"
+                ><img
+                  src="https://img.icons8.com/material-rounded/50/808080/home.png"
+              /></a>
+            </li>
+            <li>
+              <a href="../AboutScreen/index.html">About Us</a
+              ><a href="../AboutScreen/index.html"
+                ><img
+                  src="https://img.icons8.com/material-outlined/50/808080/about.png"
+              /></a>
+            </li>
+            <li>
+              <a href="../EventsScreen/index.html">Events</a
+              ><a href="../EventsScreen/index.html"
+                ><img
+                  src="https://img.icons8.com/external-sbts2018-outline-sbts2018/50/808080/external-events-social-media-basic-1-sbts2018-outline-sbts2018.png"
+              /></a>
+            </li>
+            <li>
+              <a href="../MagazineScreen/index.html">Magazines</a
+              ><a href="../MagazineScreen/index.html"
+                ><img
+                  src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/50/808080/external-magazine-advertising-kiranshastry-lineal-kiranshastry.png"
+              /></a>
+            </li>
+            <li>
+              <a href="../TeamScreen/index.html">Our team</a
+              ><a href="../TeamScreen/index.html"
+                ><img
+                  src="https://img.icons8.com/external-sbts2018-outline-sbts2018/50/808080/external-team-work-from-home-sbts2018-outline-sbts2018.png"
+              /></a>
+            </li>
+            <li>
+              <a href="../SponsersScreen/sponsors2.html">Sponsors</a
+              ><a href="../SponsersScreen/sponsors2.html"
+                ><img
+                  src="https://img.icons8.com/external-wanicon-lineal-wanicon/50/808080/external-sponsored-digital-content-wanicon-lineal-wanicon.png"
+              /></a>
+            </li>
+            <li class="selected">
+              <a href="">Contact us</a
+              ><a href=""
+                ><img
+                  src="https://img.icons8.com/ios/50/ffffff/online-support.png"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="../../sidebar/navbar.js"></script>
+  </body>
+</html>

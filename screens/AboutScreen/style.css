@@ -1,0 +1,394 @@
+@font-face {
+  font-family: LeagueGothic;
+  src: url(../../font/leaguegothic-regular-webfont.woff);
+}
+@font-face {
+  font-family: "CD";
+  src: url(../../font/CaviarDreams.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: url("../../assets/backgrounds/BGhome-min.png");
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+}
+
+.bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* background: url("../../assets/backgrounds/BGhome-min.png");
+  background-repeat: no-repeat;
+  background-size: cover; */
+  z-index: -1;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-family: Montserrat;
+}
+
+.main #about, .main  {
+  font-size: 1rem;
+  color: #fff;
+  margin-top:1rem;
+}
+
+/* .details {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 240px;
+  padding: 1rem;
+} */
+
+.logo-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  font-size: large;
+  font-weight: 600;
+  font-family: CD;
+  color: white;
+}
+
+#logo {
+  height: 50px;
+  object-fit: contain;
+  margin-right: 1rem;
+}
+
+#title {
+  text-transform: uppercase;
+  font-family: "LeagueGothic";
+  text-align: left;
+  font-size: 48px;
+  letter-spacing: 2px;
+  color: white;
+  font-weight: 200;
+  margin-top: 2rem;
+}
+
+#divider {
+  margin-left: 0;
+  background-color: rgb(104, 104, 104);
+  width: 125px;
+  margin-bottom: 10px;
+}
+
+#next {
+  margin-top: auto;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+#next #arrow {
+  width: 60px;
+  height: 30px;
+}
+
+#next a {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-decoration: none;
+  font-weight: 700;
+  text-align: center;
+  margin-left: 1rem;
+  margin-right: -8rem;
+  z-index: 1;
+}
+
+#next #circle {
+  margin-left: 12px;
+}
+
+/**/
+/*main section*/
+/**/
+
+.main {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main p {
+  font-size: 1rem;
+}
+.main #see
+{
+  text-transform: uppercase;
+}
+
+
+/* countdown timer */
+.countdown {
+  margin: 5rem auto;
+  color: rgb(217, 221, 223);
+  background-color: #1b1727;
+  background-image: linear-gradient(315deg, #1c1924 0%, #3e4b52 74%);
+  font-family: "Montserrat", sans-serif;
+  width: 550px;
+  height: 200px;
+  padding: 25px 25px;
+  border-radius: 3px;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+  transition: 0.5s;
+  transition-property: background, box-shadow;
+}
+
+.countdown:hover {
+  background: #4fa7eb;
+  box-shadow: 0 0 30px #4fa7eb;
+  height: 220px;
+  transition: all 0.5s ease;
+}
+
+.countdown:hover h2
+{
+  margin-top: 0px;
+}
+
+.countdown-value {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdown-value span {
+  width: 75px;
+  position: relative;
+  margin: 0 6px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.countdown h2 {
+  text-align: center;
+  font-size: 3.2em;
+  line-height: 1em;
+  color: #ede2df;
+  color: -webkit-radial-gradient(right, #ede2df, #010101);
+  color: -moz-radial-gradient(right, #ede2df, #010101);
+  color: radial-gradient(to left, #ede2df, #010101);
+  margin-top: -10px;
+  letter-spacing: 7px;
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+.countdown h2 span {
+  display: block;
+  font-weight: 500;
+  letter-spacing: 8px;
+  font-size: 0.32em;
+}
+
+.countdown-value span:before {
+  content: " ";
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+  width: 75px;
+  height: 35px;
+  border-radius: 0 0 8px 8px;
+  background: rgba(179, 230, 236, 0.4);
+  color: rgb(50, 51, 54);
+  font-size: 0.15em;
+  line-height: 35px;
+  font-weight: 600;
+  margin-right: 20px;
+}
+.countdown-value #days:before {
+  content: "Days";
+}
+.countdown-value #hours:before {
+  content: "Hours";
+}
+.countdown-value #minutes:before {
+  content: "Minutes";
+}
+.countdown-value #seconds:before {
+  content: "Seconds";
+}
+
+@media (max-width: 650px) {
+  .wrapper {
+    display: initial;
+
+  }
+  .main #about
+  {
+    margin-top: 3rem;
+  }
+
+  /* .details {
+    height: fit-content;
+    width: 100%;
+  } */
+
+  #next {
+    display: none;
+  }
+  .swiper {
+    width: 250px;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+}
+
+@media all and (min-width: 650px) {
+  .main {
+    margin-right: 80px;
+  }
+
+  .main p {
+    font-size: 1.4rem;
+  }
+
+  #see {
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 10px 0;
+  }
+  .bg
+ {
+   height: 100%;
+ }
+ .main {
+  padding: 10px;
+  font-size: 10px;
+}
+.main #about, .main {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+.countdown
+{
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+}
+@media all and (min-width: 800px)
+{
+  .bg
+  {
+    height: 100%;
+  }
+  .main {
+   padding: 10px;
+   font-size: 10px;
+   margin-top: 1rem;
+ }
+ .main #about, .main #see {
+   font-size: 1.3rem;
+   text-align: center;
+ }
+ .main #see 
+{
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+ .countdown
+ {
+   justify-content: center;
+   align-items: center;
+ }
+}
+
+@media (max-width: 650px) {
+  
+ .bg
+ {
+   height: 130%;
+ }
+  
+  .container {
+    flex-direction: column;
+  }
+  .ellipse {
+    display: none;
+  }
+  .main {
+    margin-left: 2px;
+    padding: 2px;
+    font-size: 8px;
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+  .main #about{
+    font-size: 1rem;
+    text-align: justify;
+
+  }
+  .main #see 
+{
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+  .countdown {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+    margin-top: 5rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+  .countdown-value span:before {
+    width: 50px;
+    font-size: 0.15em;
+  }
+  
+  .countdown-value > span {
+    /* max-width: 150px; */
+    width: 50px;
+    font-size: 35px;
+  }
+  .countdown h2 {
+    font-size: 2.5em;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+  }
+  .countdown h2 span {
+    font-size: 0.35em;
+    letter-spacing: 0.3rem;
+  }
+}
