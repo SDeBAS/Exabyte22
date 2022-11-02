@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "Caviar Dreams";
+  src: url("../font/CaviarDreams.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  user-select: none;
+  background-color: #000;
+}
+
+#particles-js canvas {
+  position: absolute;
+  background-color: #000;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  -webkit-transition: opacity 0.8s ease, -webkit-transform 1.4s ease;
+  transition: opacity 0.8s ease, transform 1.4s ease;
+}
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -10;
+  top: 0;
+  left: 0;
+}
+
+canvas {
+  display: block;
+  z-index: -1;
+}
+
+.logo-wrapper {
+  height: 500px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#line1 {
+  position: relative;
+  top: 22%;
+  height: 200px;
+  animation: lineanim1 ease-out 3s infinite;
+}
+
+#line2 {
+  position: relative;
+  top: -18%;
+  height: 200px;
+  animation: lineanim2 ease-out 3s infinite;
+}
+
+#line3 {
+  position: relative;
+  top: -39.5%;
+  height: 15px;
+  animation: lineanim3 5s infinite;
+}
+
+@keyframes lineanim1 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(180deg);
+  }
+}
+
+@keyframes lineanim2 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(-180deg);
+  }
+}
+
+@keyframes lineanim3 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(180deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.progress-wrapper {
+  position: absolute;
+}
+
+#circle-progress-bg {
+  position: absolute;
+}
+
+#circle-progress > circle {
+  stroke-dasharray: 1150;
+  stroke-dashoffset: 1150;
+  animation: progressanim 5s linear forwards;
+}
+
+@keyframes progressanim {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+h2 {
+  position: absolute;
+  top: 80%;
+  color: #fff;
+  font-family: "Caviar Dreams";
+  font-size: 2.5rem;
+}
+
+@media (max-width:600px) {
+  .progress-wrapper, .logo-wrapper {
+    transform: scale(0.7);
+  }
+}

@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
+
+/**/
+/*buttons*/
+/**/
+
+.nav__btns {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+#open {
+  margin-right: 20px;
+}
+
+.sidebar {
+  position: fixed;
+  right: 2rem;
+  width: 240px;
+  min-width: 240px;
+  padding: 1rem 0;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  transition: 0.5s ease-in-out;
+  border-radius: 0 0 0 0;
+  font-family: "Montserrat", sans-serif;
+
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+
+/**/
+/*top section/all options*/
+/**/
+
+.sidebar div {
+  border-right: 1px solid gray;
+  margin-right: 2rem;
+}
+
+.options__container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.sidebar li img {
+  height: 30px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: gray;
+}
+
+.selected {
+  font-size: x-large;
+  font-weight: 500;
+}
+
+/**/
+/*icons container*/
+/**/
+
+.icons__container {
+  padding: 5;
+  display: flex;
+  justify-content: space-around;
+}
+
+/**/
+/*for smaller devices*/
+/**/
+
+@media all and (min-width: 800px) {
+  .nav__btns {
+    display: none;
+  }
+
+  /* .sidebar {
+    position: inherit;
+    right: 0;
+  } */
+
+  .sidebar li img {
+    margin-left: 10px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .nav__btns {
+    display: flex;
+  }
+
+  .sidebar {
+    position: fixed;
+    right: -190px;
+    background-color: #161616;
+  }
+
+  .sidebar div {
+    margin-right: 0;
+  }
+
+  .sidebar li {
+    flex-direction: row-reverse;
+  }
+  .sidebar li img {
+    margin-right: 10px;
+  }
+  .selected a img {
+    border: 1px solid white;
+    padding: 3px;
+    border-radius: 3px;
+  }
+
+  .options__container {
+    justify-content: flex-start;
+  }
+}
